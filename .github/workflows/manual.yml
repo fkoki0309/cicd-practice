@@ -14,7 +14,8 @@ on:
 jobs:
     run:
         runs-on: ubuntu-latest
-        steps: 
-            - run: echo "${{inputs.greeting}}"
-            - run: echo "${{github.actor}}"
-            - run: echo "${{github.workspace}}"
+        steps:
+            - run:
+                echo "${{inputs.greeting}}"
+                echo "${{github.actor}}"
+                echo "${{github.workspace}}"
